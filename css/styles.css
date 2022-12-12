@@ -53,6 +53,7 @@ a {
 
 .footer .container {
     justify-content: flex-start;
+    align-items: baseline;
     padding: 60px 214px;
 }
 
@@ -248,7 +249,7 @@ a {
     margin-bottom: 10px;
 }
 
-.our-team .icons {
+.icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,6 +330,10 @@ address p {
     color: var(--white);
 }
 
+.footer-logo {
+    margin-bottom: 20px;
+}
+
 .footer .link {
     font-weight: 400;
     font-size: 14px;
@@ -338,6 +343,32 @@ address p {
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .subtitle {
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-wrapper {
+    padding-left: 70px;
+}
+
+.footer .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover {
+    background-color: var(--accent-blue);
+}
+
+.footer .social-link svg {
+    fill: var(--white);
 }
 
 .container.portpholio {
@@ -356,7 +387,7 @@ address p {
 }
 
 .filter-button:hover,
-.filter-button:hover {
+.filter-button:focus {
     color:rgb(255, 255, 255);
     background-color: var(--accent-blue);
     transition: all .2s ease-in;
