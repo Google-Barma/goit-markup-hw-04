@@ -28,6 +28,15 @@ a {
     padding: 94px 214px;
 }
 
+.gallery .container,
+.our-team .container {
+    flex-direction: column;
+}
+
+.features .container {
+    padding: 94px 214px 0;
+}
+
 .header .container {
     padding: 24px 214px;
 }
@@ -36,6 +45,15 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.clients .container {
+    flex-direction: column;
+}
+
+.footer .container {
+    justify-content: flex-start;
+    padding: 60px 214px;
 }
 
 .logo {
@@ -181,14 +199,6 @@ a {
     margin-bottom: 30px;
 }
 
-.features .container {
-    padding: 94px 214px 0;
-}
-
-.gallery .container {
-    flex-direction: column;
-}
-
 .gallery ul {
     display: flex;
 }
@@ -199,10 +209,6 @@ a {
 
 .our-team {
     background-color: #F5F4FA;
-}
-
-.our-team .container {
-    flex-direction: column;
 }
 
 .our-team ul {
@@ -273,13 +279,39 @@ a {
     background-color: var(--accent-blue);
 }
 
-.footer {
-    background-color: #2F303A;
+.clients ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.footer .container {
-    justify-content: flex-start;
-    padding: 60px 214px;
+.clients li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-grey);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clients li:hover,
+.clients li:focus {
+    border: 1px solid var(--accent-blue);
+}
+
+.clients li:hover svg,
+.clients li:focus svg {
+    fill: var(--accent-blue);
+}
+
+.clients svg {
+    fill: var(--icon-grey);
+}
+
+.footer {
+    background-color: #2F303A;
 }
 
 .footer .logo span {
